@@ -1,32 +1,35 @@
-body {
-  overflow-x: hidden;
-  direction: rtl;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') body {
 
-.owl-carousel {
-  direction: ltr;
-}
+  body {
+    overflow-x: hidden;
+    direction: rtl;
+  }
 
-.owl-carousel .owl-nav,
-.owl-carousel .owl-dots,
-.owl-carousel .owl-item {
-  direction: rtl;
-}
+  .owl-carousel {
+    direction: ltr;
+  }
 
-.contact__input-box .bootstrap-select .dropdown-menu,
-.bootstrap-select .dropdown-toggle .filter-option {
-  text-align: right;
-}
+  .owl-carousel .owl-nav,
+  .owl-carousel .owl-dots,
+  .owl-carousel .owl-item {
+    direction: rtl;
+  }
 
-.list-unstyled {
-  padding-right: 0;
-}
+  .contact__input-box .bootstrap-select .dropdown-menu,
+  .bootstrap-select .dropdown-toggle .filter-option {
+    text-align: right;
+  }
 
-.testimonials-card__author {
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 12% 100%);
-}
+  .list-unstyled {
+    padding-right: 0;
+  }
 
-.main-slider-one__carousel .owl-dots {
-  width: 98%;
-}
-/*# sourceMappingURL=ienet-custom-rtl.css.map */
+  .testimonials-card__author {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 12% 100%);
+  }
+
+  .main-slider-one__carousel .owl-dots {
+    width: 98%;
+  }
+
+  /*# sourceMappingURL=ienet-custom-rtl.css.map */

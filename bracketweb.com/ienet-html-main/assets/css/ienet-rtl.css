@@ -1,3 +1,5 @@
+
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -14,6 +16,7 @@
 # Client Carousel
 # Update Home Css
 --------------------------------------------------------------*/
+
 :root {
   --ienet-font: "Outfit", sans-serif;
   --ienet-heading-font: "Outfit", serif;
@@ -247,7 +250,8 @@
 # Common
 --------------------------------------------------------------*/
 body {
-  font-family: var(--ienet-font, "Outfit", sans-serif);
+  /* font-family: var(--ienet-font, "Outfit", sans-serif); */
+  font-family:;
   color: var(--ienet-text, #737177);
   font-size: 16px;
   line-height: 1.75;
