@@ -56,15 +56,21 @@ body {
 }
 
 /* Hide scrollbar for Firefox */
+
+.infranet {
+  color: #DF233A;
+  font-weight: bold;
+}
+
 html {
   scrollbar-width: none;
 }
 
-.movie-one{
+.movie-one {
   display: none;
 }
 
-.main-footer{
+.main-footer {
   padding-top: 48px;
 }
 
@@ -3519,7 +3525,7 @@ h6 {
   background-color: var(--ienet-gray, #F7F5F1);
   border: 1px solid var(--ienet-border-color, #E6E2D9);
   border-radius: 20px;
-  padding: 38px 29px 38px;
+  padding: 38px 10px 38px;
 }
 
 .contact-one__info__item:hover .contact-one__info__icon {
