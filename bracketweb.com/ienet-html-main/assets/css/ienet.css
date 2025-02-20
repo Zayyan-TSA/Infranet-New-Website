@@ -57,9 +57,29 @@ body {
 
 /* Hide scrollbar for Firefox */
 
-.infranet {
+.blog-one {
+  margin-bottom: 40px;
+}
+
+.infranet,
+#affordable {
   color: #DF233A;
   font-weight: bold;
+}
+
+.color-white {
+  color: white !important;
+}
+
+.cta-one {
+  background-color: #251444;
+  margin: 30px 20px;
+  border-radius: 40px;
+}
+
+.temp-display-none {
+  display: none;
+  opacity: 0;
 }
 
 html {
