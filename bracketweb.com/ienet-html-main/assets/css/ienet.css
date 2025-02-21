@@ -43,6 +43,12 @@
 /*--------------------------------------------------------------
 # Utility
 --------------------------------------------------------------*/
+
+.feature-one__box {
+  display: flex;
+  align-items: center;
+}
+
 body {
   overflow: auto;
   /* Allows scrolling */
@@ -58,7 +64,7 @@ body {
 /* Hide scrollbar for Firefox */
 
 .blog-one {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .infranet,
@@ -3401,7 +3407,7 @@ h6 {
 .sidebar-one__title {
   color: var(--ienet-white, #fff);
   font-size: 20px;
-  margin: 0 0 18px;
+  margin: 30px 0;
 }
 
 .sidebar-one__info {
@@ -10036,7 +10042,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .faq-one {
   position: relative;
-  padding: 120px 0;
+  padding: 57px 0;
 }
 
 @media (max-width: 767px) {
@@ -16059,15 +16065,15 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 
 .feature-one__box+.feature-one__box {
-  border-top: 1px solid var(--ienet-border-color, #E6E2D9);
+  /* border-top: 1px solid var(--ienet-border-color, #E6E2D9); */
   margin-top: 40px;
-  padding-top: 39px;
+  /* padding-top: 39px; */
 }
 
 .feature-one__box {
   position: relative;
   padding: 0 0 0 98px;
-  min-height: 73px;
+  min-height: 95px;
 }
 
 .feature-one__box__icon {
