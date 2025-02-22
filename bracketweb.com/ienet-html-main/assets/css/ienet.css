@@ -44,9 +44,18 @@
 # Utility
 --------------------------------------------------------------*/
 
+#plan-parent {
+  background-color: red;
+}
+
 .feature-one__box {
   display: flex;
   align-items: center;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -62,6 +71,10 @@ body {
 }
 
 /* Hide scrollbar for Firefox */
+
+#mb-1 {
+  margin-bottom: 10px;
+}
 
 .blog-one {
   margin-bottom: 80px;
@@ -2799,7 +2812,7 @@ h6 {
 
 .main-footer__top {
   position: relative;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .main-footer__top__inner {
