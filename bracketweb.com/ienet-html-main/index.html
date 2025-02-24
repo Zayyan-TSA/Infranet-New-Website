@@ -1354,7 +1354,7 @@
                     <!-- /.sec-title__title -->
                 </div><!-- /.sec-title -->
                 <div class="blog-one__carousel ienet-owl__carousel ienet-owl__carousel--with-shadow ienet-owl__carousel--basic-nav owl-carousel owl-theme"
-                    data-owl-options='{
+                    id="blog-parent" data-owl-options='{
 			"items": 1,
 			"margin": 30,
 			"loop": false,
@@ -1377,6 +1377,7 @@
 				}
 			}
 			}'>
+                    <template id="blog-card">
                     <div class="item">
                         <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='00ms'>
                             <div class="blog-card__image">
@@ -1384,19 +1385,23 @@
                                     alt="Cupidatat Nonproident, Sunt in Culpa qui Officia Deserunt">
                                 <img src="assets/images/blog/blog-1-1.png"
                                     alt="Cupidatat Nonproident, Sunt in Culpa qui Officia Deserunt">
-                                <a href="blog-details-right.html" class="blog-card__image__link"><span
-                                        class="sr-only">Cupidatat Nonproident, Sunt in Culpa qui Officia Deserunt</span>
+                                <a href="blog-details-right.html" class="blog-card__image__link"><span class="sr-only"
+                                        id="blog-heading">
+                                       </span>
                                     <!-- /.sr-only --></a>
-                                <div class="blog-card__date temp-display-none">AUG, 04</div><!-- /.blog-card__date -->
+                                <div class="blog-card__date temp-display-none">AUG, 04</div>
+                                <!-- /.blog-card__date -->
                                 <ul class="list-unstyled blog-card__meta temp-display-none">
-                                    <li><a href="blog-list-right.html"><i class="fas fa-user-alt"></i>by Admin</a></li>
+                                    <li><a href="blog-list-right.html"><i class="fas fa-user-alt"></i>by Admin</a>
+                                    </li>
                                     <li class="temp-display-none"><a href="blog-details-right.html"><i
                                                 class="fas fa-comment-dots"></i>2
                                             Comments</a></li>
                                 </ul><!-- /.list-unstyled blog-card__meta -->
                             </div><!-- /.blog-card__image -->
                             <div class="blog-card__content">
-                                <h3 class="blog-card__title"><a href="blog-details-right.html">Cupidatat Nonproident,
+                                <h3 class="blog-card__title"><a href="blog-details-right.html">Cupidatat
+                                        Nonproident,
                                         Sunt in Culpa qui Officia Deserunt</a></h3><!-- /.blog-card__title -->
                                 <a href="blog-details-right.html" class="blog-card__link">
                                     <span class="blog-card__link__front"><span
@@ -1407,137 +1412,22 @@
                             </div><!-- /.blog-card__content -->
                         </div><!-- /.blog-card -->
                     </div><!-- /.item -->
-                    <div class="item">
-                        <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
-                            <div class="blog-card__image">
-                                <img src="assets/images/blog/blog-1-2.png"
-                                    alt="The Best Usage of The Fiber Internet from Broadband">
-                                <img src="assets/images/blog/blog-1-2.png"
-                                    alt="The Best Usage of The Fiber Internet from Broadband">
-                                <a href="blog-details-right.html" class="blog-card__image__link"><span
-                                        class="sr-only">The Best Usage of The Fiber Internet from Broadband</span>
-                                    <!-- /.sr-only --></a>
-                                <div class="blog-card__date">AUG, 04</div><!-- /.blog-card__date -->
-                                <ul class="list-unstyled blog-card__meta">
-                                    <li><a href="blog-list-right.html"><i class="fas fa-user-alt"></i>by Admin</a></li>
-                                    <li><a href="blog-details-right.html"><i class="fas fa-comment-dots"></i>2
-                                            Comments</a></li>
-                                </ul><!-- /.list-unstyled blog-card__meta -->
-                            </div><!-- /.blog-card__image -->
-                            <div class="blog-card__content">
-                                <h3 class="blog-card__title"><a href="blog-details-right.html">The Best Usage of The
-                                        Fiber Internet from Broadband</a></h3><!-- /.blog-card__title -->
-                                <a href="blog-details-right.html" class="blog-card__link">
-                                    <span class="blog-card__link__front"><span
-                                            class="fas fa-angle-double-right"></span></span>
-                                    <span class="blog-card__link__back"><span
-                                            class="fas fa-angle-double-right"></span>Read More</span>
-                                </a><!-- /.blog-card__link -->
-                            </div><!-- /.blog-card__content -->
-                        </div><!-- /.blog-card -->
-                    </div><!-- /.item -->
-                    <div class="item">
-                        <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
-                            <div class="blog-card__image">
-                                <img src="assets/images/blog/blog-1-3.png"
-                                    alt="Suspendisse Posuere, Leo ac Laoreet Dapibus, Urna">
-                                <img src="assets/images/blog/blog-1-3.png"
-                                    alt="Suspendisse Posuere, Leo ac Laoreet Dapibus, Urna">
-                                <a href="blog-details-right.html" class="blog-card__image__link"><span
-                                        class="sr-only">Suspendisse Posuere, Leo ac Laoreet Dapibus, Urna</span>
-                                    <!-- /.sr-only --></a>
-                                <div class="blog-card__date">AUG, 04</div><!-- /.blog-card__date -->
-                                <ul class="list-unstyled blog-card__meta">
-                                    <li><a href="blog-list-right.html"><i class="fas fa-user-alt"></i>by Admin</a></li>
-                                    <li><a href="blog-details-right.html"><i class="fas fa-comment-dots"></i>2
-                                            Comments</a></li>
-                                </ul><!-- /.list-unstyled blog-card__meta -->
-                            </div><!-- /.blog-card__image -->
-                            <div class="blog-card__content">
-                                <h3 class="blog-card__title"><a href="blog-details-right.html">Suspendisse Posuere, Leo
-                                        ac Laoreet Dapibus, Urna</a></h3><!-- /.blog-card__title -->
-                                <a href="blog-details-right.html" class="blog-card__link">
-                                    <span class="blog-card__link__front"><span
-                                            class="fas fa-angle-double-right"></span></span>
-                                    <span class="blog-card__link__back"><span
-                                            class="fas fa-angle-double-right"></span>Read More</span>
-                                </a><!-- /.blog-card__link -->
-                            </div><!-- /.blog-card__content -->
-                        </div><!-- /.blog-card -->
-                    </div><!-- /.item -->
+                    </template>
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.blog-one -->
 
-        <div class="client-carousel temp-display-none">
-            <div class="container">
-                <div class="client-carousel__one ienet-owl__carousel owl-theme owl-carousel" data-owl-options='{
-            "items": 5,
-            "margin": 65,
-            "smartSpeed": 700,
-            "loop":true,
-            "autoplay": 6000,
-            "nav":false,
-            "dots":false,
-            "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
-            "responsive":{
-                "0":{
-                    "items":1,
-                    "margin": 0
-                },
-                "360":{
-                    "items":2,
-                    "margin": 30
-                },
-                "575":{
-                    "items":3,
-                    "margin": 30
-                },
-                "768":{
-                    "items":3,
-                    "margin": 40
-                },
-                "992":{
-                    "items": 4,
-                    "margin": 40
-                },
-                "1200":{
-                    "items": 5,
-                    "margin": 140
-                }
-            }
-            }'>
-                    <div class="client-carousel__one__item">
-                        <img class="client-carousel__one__item__normal" src="assets/images/resources/brand-1-1.png"
-                            alt="ienet">
-                        <img class="client-carousel__one__item__hover" src="assets/images/resources/brand-1-1-hover.png"
-                            alt="ienet">
-                    </div><!-- /.owl-slide-item-->
-                    <div class="client-carousel__one__item">
-                        <img class="client-carousel__one__item__normal" src="assets/images/resources/brand-1-2.png"
-                            alt="ienet">
-                        <img class="client-carousel__one__item__hover" src="assets/images/resources/brand-1-2-hover.png"
-                            alt="ienet">
-                    </div><!-- /.owl-slide-item-->
-                    <div class="client-carousel__one__item">
-                        <img class="client-carousel__one__item__normal" src="assets/images/resources/brand-1-3.png"
-                            alt="ienet">
-                        <img class="client-carousel__one__item__hover" src="assets/images/resources/brand-1-3-hover.png"
-                            alt="ienet">
-                    </div><!-- /.owl-slide-item-->
-                    <div class="client-carousel__one__item">
-                        <img class="client-carousel__one__item__normal" src="assets/images/resources/brand-1-4.png"
-                            alt="ienet">
-                        <img class="client-carousel__one__item__hover" src="assets/images/resources/brand-1-4-hover.png"
-                            alt="ienet">
-                    </div><!-- /.owl-slide-item-->
-                    <div class="client-carousel__one__item">
-                        <img class="client-carousel__one__item__normal" src="assets/images/resources/brand-1-5.png"
-                            alt="ienet">
-                        <img class="client-carousel__one__item__hover" src="assets/images/resources/brand-1-5-hover.png"
-                            alt="ienet">
-                    </div><!-- /.owl-slide-item-->
-                </div><!-- /.thm-owl__slider -->
+        <div class="client-carousel">
+            <div class="carousel-container">
+                <marquee direction="right" scrollamount="18" class="marquee">
+                    <img src="assets/images/kmes.png" alt="">
+                    <img src="assets/images/samadiya.png" alt="">
+                    <img src="assets/images/bncmc.png" alt="">
+                    <img src="assets/images/eyeOptical.png" alt="">
+                    <img src="assets/images/lapindo.png" alt="">
+                    <img src="assets/images/torrent.png" alt="">
+                    <img src="assets/images/vijaysales.png" alt="">
+                </marquee>
             </div><!-- /.container -->
         </div><!-- /.client-carousel -->
 
@@ -1545,9 +1435,11 @@
             <div class="main-footer__bg background-black"
                 style="background-image: url(assets/images/shapes/footer-bg-1-1.png);"></div>
             <div class="main-footer__shape-one"
-                style="background-image: url(assets/images/resources/footer-shape-1.png);"></div>
+                style="background-image: url(assets/images/resources/footer-shape-1.png);">
+            </div>
             <div class="main-footer__shape-two"
-                style="background-image: url(assets/images/resources/footer-shape-2.png);"></div>
+                style="background-image: url(assets/images/resources/footer-shape-2.png);">
+            </div>
             <!-- /.main-footer__bg -->
             <div class="container">
                 <div class="main-footer__middle">
@@ -1756,6 +1648,7 @@
     <script src="assets/vendors/gsap/ienet-split.js"></script>
     <!-- template js -->
     <script src="assets/js/ienet.js"></script>
+    <script src="assets/js/blog.js"></script>
 </body>
 
 
