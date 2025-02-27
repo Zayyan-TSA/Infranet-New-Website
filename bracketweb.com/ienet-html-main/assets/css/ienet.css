@@ -43,6 +43,11 @@
 /*--------------------------------------------------------------
 # Utility
 --------------------------------------------------------------*/
+
+.main-header__inner {
+  padding: 0 !important;
+}
+
 .marquee {
   display: flex;
   align-items: center;
@@ -3808,7 +3813,7 @@ h6 {
 .main-header {
   position: absolute;
   left: 0;
-  top: 56px;
+  top: 10px;
   width: 100%;
   z-index: 99;
   background-color: transparent;
@@ -3832,7 +3837,7 @@ h6 {
 .main-header__inner {
   display: flex;
   align-items: center;
-  padding: 19px 0;
+  padding: 0;
   position: relative;
 }
 
@@ -4475,7 +4480,7 @@ h6 {
 
 .mobile-nav__btn span {
   width: 100%;
-  height: 2px;
+  height: 2.8px;
   background-color: var(--ienet-white, #fff);
 }
 
