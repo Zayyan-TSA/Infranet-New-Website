@@ -44,6 +44,15 @@
 # Utility
 --------------------------------------------------------------*/
 
+#blog-content {
+  /* height: 25px; */
+}
+
+.main-header__toggler,
+.topbar-one__inner {
+  display: none !important;
+}
+
 .main-header__inner {
   padding: 0 !important;
 }
@@ -3823,7 +3832,7 @@ h6 {
 
 @media (max-width: 1650px) {
   .main-header {
-    padding: 0 15px;
+    padding: 0 20px;
   }
 }
 
@@ -4496,7 +4505,7 @@ h6 {
 .main-menu .main-menu__list,
 .main-menu .main-menu__list ul {
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   list-style-type: none;
   align-items: center;
   display: none;

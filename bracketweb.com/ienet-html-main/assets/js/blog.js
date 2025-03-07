@@ -1,29 +1,35 @@
-console.log('welcome to the blogs page');
 
 const FetchData = async () => {
-
-
   try {
-    const data = await fetch('http://103.123.45.76:9444/api/blogManagement');
-    const response = await data.json();
-    console.log(response);
-
-    const template = document.getElementById("blog-card");
-
-    response.forEach(element => {
-      const clone = template.content.cloneNode(true);
-
-      clone.querySelector("blog-heading").textContent = element.title;
-
-      document.getElementById('blogParent').appendChild(clone);
-
-    });
-  }
-
-  catch (error) {
+    const response = await fetch('http://103.123.45.76:9444/api/blogManagement');
+    const data = await response.json();
+    console.log(data);
+    AddBlog(data);
+  } catch (error) {
     console.log(error);
   }
-
 }
 
-FetchData()
+const truncateText = (text, maxLength) => {
+  if (text.length <= maxLength) return text;
+  return text.substring(0, maxLength) + "...";
+}
+
+function AddBlog(response) {
+
+  const BlogCardContainer = document.getElementById('blog-card-container');
+  const template = document.getElementById('blog-card');
+
+  response.forEach(blogs => {
+
+    const clone = template.content.cloneNode(true);
+
+    clone.querySelector('#blog-title a').textContent = blogs.title;
+    clone.querySelector('#blog-content').textContent = truncateText(blogs.infography, 100);
+    // clone.querySelector('.blog-card__image img').src = blogs.imageName
+
+    BlogCardContainer.append(clone);
+  })
+}
+
+window.addEventListener('DOMContentLoaded', FetchData)
