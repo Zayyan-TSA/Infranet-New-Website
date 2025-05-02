@@ -351,14 +351,27 @@ html {
 --------------------------------------------------------------*/
 body {
   font-family: var(--ienet-font, "Outfit", sans-serif);
-  color: var(--ienet-text, #737177);
+  color: var(--ienet-text, #3a383d);
   font-size: 16px;
   line-height: 1.75;
   font-weight: 400;
 }
 
+.fa-play {
+  color: #DF2339;
+}
+
+.inner p {
+  color: #251444;
+}
+
 body.locked {
   overflow: hidden;
+}
+
+.faq-one__content__box {
+  display: flex;
+  align-items: center;
 }
 
 a {
@@ -388,6 +401,12 @@ h6 {
   color: var(--ienet-black, #251444);
   font-weight: 600;
 }
+
+.blog-content {
+  font-weight: 500 !important;
+}
+
+
 
 @media (max-width: 575px) {
 
@@ -13838,9 +13857,9 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .mobile-nav__close {
   position: absolute;
-  top: 20px;
-  right: 15px;
-  font-size: 18px;
+  top: 22px;
+  right: 19px;
+  font-size: 29px;
   color: var(--ienet-white, #fff);
   cursor: pointer;
 }
@@ -13901,6 +13920,11 @@ body.megamenu-popup-active .mobile-nav__content {
   text-align: center;
   transform: rotate(-90deg);
   transition: transform 500ms ease;
+  display: none !important;
+}
+
+.mobile-nav__container li a:hover {
+  color: #DF2339 !important;
 }
 
 .mobile-nav__content .main-menu__list li a button.expanded {

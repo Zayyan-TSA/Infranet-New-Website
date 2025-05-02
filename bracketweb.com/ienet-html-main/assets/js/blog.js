@@ -1,14 +1,15 @@
 
 const FetchData = async () => {
   try {
-    const response = await fetch('http://103.123.45.76:9444/api/plan/getAll');
+    const response = await fetch('http://103.123.45.76:9444/api/blogManagement');
     const data = await response.json();
     console.log(data);
-    // AddBlog(data);
+    AddBlog(data);
   } catch (error) {
     console.log(error);
   }
 }
+
 
 const truncateText = (text, maxLength) => {
   if (text.length <= maxLength) return text;
