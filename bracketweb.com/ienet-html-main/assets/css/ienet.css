@@ -14,6 +14,12 @@
 # Client Carousel
 # Update Home Css
 --------------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --ienet-font: "Outfit", sans-serif;
   --ienet-heading-font: "Outfit", serif;
@@ -43,6 +49,64 @@
 /*--------------------------------------------------------------
 # Utility
 --------------------------------------------------------------*/
+.months {
+  background-color: #DF2339;
+}
+
+#months-container,
+.pricing-card-container {
+  gap: 29px;
+}
+
+#Cards-Container p,
+.pricing-card-container p {
+  text-align: center;
+  color: white;
+  width: 160px;
+  font-size: 25px;
+  border-radius: 18px;
+}
+
+.pricing-card-container {
+  display: flex;
+  align-items: center;
+}
+
+.pricing-card-container p{
+  background-color: white;
+  color: #DF2339;
+  margin-top: 10px;
+}
+
+#months-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 23px;
+}
+
+#Dropdown-Container {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+}
+
+#cityDropdown,
+#areaDropdown {
+  display: block;
+  width: 350px;
+  height: 40px;
+  margin: 50px 10px 20px 10px;
+  border-radius: 40px;
+  padding: 1px 13px;
+  font-size: 20px;
+  outline: none;
+}
+
+.plan-months {
+  display: flex;
+  align-items: center;
+}
 
 #blog-content {
   /* height: 25px; */

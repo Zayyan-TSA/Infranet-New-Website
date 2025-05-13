@@ -386,41 +386,49 @@
 
                             <h3 class="sec-title__title bw-split-in-left">Select Your <span>Best Plan</span></h3>
                             <!-- /.sec-title__title -->
+
+                            <div id="Dropdown-Container">
+                                <select id="cityDropdown">
+                                    <option value="" disabled selected>Select City</option>
+                                </select>
+
+                                <!-- <h2 id="areaLabel" style="display: none;">Select Area (Bhiwandi)</h2> -->
+                                <select id="areaDropdown" style="display: none;">
+                                    <option value="">Select Area</option>
+                                </select>
+                            </div>
+
                         </div><!-- /.sec-title -->
                     </div>
-                    <div class="col-md-4">
+
+                    <!-- <div class="plan-months">
+                        <div>30 Days</div>
+                        <div>90 Days</div>
+                        <div>180 Days</div>
+                        <div>360 Days</div>
+                    </div> -->
+
+                    <!-- <div class="col-md-4">
                         <a href="packages.html" class="ienet-btn"><span>View All Service<span class="ienet-btn__icon"><i
                                         class="fas fa-chevron-right"></i></span></span></a>
+                    </div> -->
+                </div>
+
+                <div id="Cards-Container">
+                    <div id="months-container">
+                        <p class="months">Plan Speed</p>
+                        <p class="months">1 Months</p>
+                        <p class="months">3 Months</p>
+                        <p class="months">6 Months</p>
+                        <p class="months">12 Months</p>
                     </div>
                 </div>
 
-                <div class="tabs-content">
-                    <div class="tab fadeInUp animated active-tab" id="20mbps">
-                        <div class="row gutter-y-30" id="pricing-card-parent">
-                            <template id="pricing-card">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="packages-one__card">
-                                        <div class="packages-one__card__price" id="package-price">$20 /
-                                            <span>month</span>
-                                        </div>
-                                        <h3 class="packages-one__card__title">Basic Package</h3>
-                                        <ul class="packages-one__card__list">
-                                            <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                            <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                            <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                            <li><span class="fas fa-check"></span>OTC-Free</li>
-                                        </ul>
-                                        <a class="packages-one__card__rm" href="contact.html"><i
-                                                class="icon-right-chevron"></i></a>
-                                        <div class="packages-one__card__image">
-                                            <img src="assets/images/resources/package-1-1.jpg" alt="ienet">
-                                        </div>
-                                    </div>
-                                </div><!-- item -->
-                            </template>
-                        </div>
-                    </div>
+                <div id="parent">
                 </div>
+
+                <!-- <div id="pricing-card-parent-container"> -->
+                <!-- </div> -->
             </div>
         </section>
 
