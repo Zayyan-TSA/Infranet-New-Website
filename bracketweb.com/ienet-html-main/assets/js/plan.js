@@ -96,27 +96,37 @@ function SelectDropdownValue() {
 }
 
 function renderPlans(plans) {
-  const parent = document.getElementById('parent');
-  parent.innerHTML = '';
+  const PlansContainer = document.getElementById('PlanPrice-Container');
+  PlansContainer.innerHTML = '';
 
   if (plans.length === 0) {
-    parent.innerHTML = '<p>No plans available.</p>';
+    PlansContainer.innerHTML = '<p>No plans available.</p>';
     return;
   }
 
   plans.forEach(plan => {
-    let CardsContainer = document.createElement('div');
-    CardsContainer.classList.add('pricing-card-container');
-    parent.append(CardsContainer);
+    let pricingCard = document.createElement('div');
+    pricingCard.classList.add('pricingCard');
+    PlansContainer.append(pricingCard);
 
     let p = document.createElement('p');
-    p.textContent = `${plan.planName} MBPS`;
-    CardsContainer.append(p);
+    p.textContent = `${plan.planName} Mbps`;
+    pricingCard.append(p);
+    // let PlanCard = `<p>${plan.planName} Mbps`
     plan.planList.forEach((plans) => {
-      const card = document.createElement('p');
-      card.classList.add('plan-card');
-      card.textContent = plans.amount;
-      CardsContainer.appendChild(card);
+      let p = document.createElement('p');
+      p.textContent = plans.amount;
+      pricingCard.appendChild(p);
+      if (plans.saving != '' || plans.freeDays != 0) {
+        const saving = document.createElement('span');
+        saving.textContent = plans.saving;
+        const freeDays = document.createElement('span');
+        freeDays.textContent = plans.freeDays;
+        pricingCard.appendChild(saving);
+        pricingCard.appendChild(freeDays);
+      } else {
+        pricingCard.classList.add('text-center')
+      }
     });
   })
 }
