@@ -49,12 +49,39 @@
 /*--------------------------------------------------------------
 # Utility
 --------------------------------------------------------------*/
+p .span {
+  position: relative;
+  text-align:initial !important;
+}
+
+.span {
+  font-size: 17px;
+  background-color: #DF2339;
+  color: white;
+  border-radius: 15px;
+  padding: 0px 14px;
+}
+
+.space-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pricingCard:nth-child(1) {
+  background: none !important;
+  color: white !important;
+}
+
+#Plan-Container {
+  text-align: center;
+}
 
 .text-center {
   text-align: center;
 }
 
-.pricingCard p:nth-last-child(-n+4) {
+.pricingCard p {
   padding: 5px 0;
   background-color: white;
   color: black;
@@ -71,7 +98,7 @@
 }
 
 #Plan-Container p {
-  width: 200px;
+  width: 210px;
   font-size: 25px;
   border-radius: 10px;
 }
@@ -81,8 +108,12 @@
   align-items: center;
 }
 
-.pricingCard p {
+/* .pricingCard p:first-of-type {
+  background: none !important;
   color: white;
+} */
+
+.pricingCard p {
   margin-top: 10px;
   font-weight: 500;
   /* text-align: center; */

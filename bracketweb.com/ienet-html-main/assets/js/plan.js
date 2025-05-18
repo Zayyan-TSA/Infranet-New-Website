@@ -104,31 +104,22 @@ function renderPlans(plans) {
     return;
   }
 
-  plans.forEach(plan => {
-    let pricingCard = document.createElement('div');
-    pricingCard.classList.add('pricingCard');
-    PlansContainer.append(pricingCard);
-
-    let p = document.createElement('p');
-    p.textContent = `${plan.planName} Mbps`;
-    pricingCard.append(p);
-    // let PlanCard = `<p>${plan.planName} Mbps`
+  plans.forEach((plan) => {
+    let parent = document.getElementById('PlanPrice-Container')
+    let div = document.createElement('div');
+    div.classList.add('pricingCard');
+    let card = `<p>${plan.planName} Mbps</p>`;
     plan.planList.forEach((plans) => {
-      let p = document.createElement('p');
-      p.textContent = plans.amount;
-      pricingCard.appendChild(p);
-      if (plans.saving != '' || plans.freeDays != 0) {
-        const saving = document.createElement('span');
-        saving.textContent = plans.saving;
-        const freeDays = document.createElement('span');
-        freeDays.textContent = plans.freeDays;
-        pricingCard.appendChild(saving);
-        pricingCard.appendChild(freeDays);
+      if (plans.saving != 0 || plans.freeDays != '') {
+        card += `<div class='pricingCard'><p class='space-around'>₹${plans.amount}<span class='span'>Save ₹${plans.saving}</span></p>`
       } else {
-        pricingCard.classList.add('text-center')
+        card += `<p>₹${plans.amount}</p>`
       }
-    });
+    })
+    div.innerHTML = card;
+    parent.append(div);
   })
+
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
