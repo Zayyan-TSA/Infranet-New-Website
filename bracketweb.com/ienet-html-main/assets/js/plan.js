@@ -108,10 +108,10 @@ function renderPlans(plans) {
     let parent = document.getElementById('PlanPrice-Container')
     let div = document.createElement('div');
     div.classList.add('pricingCard');
-    let card = `<p>${plan.planName} Mbps</p>`;
+    let card = `<p class='mbps'><span style="color: white;">⚡</span>${plan.planName} Mbps</p>`;
     plan.planList.forEach((plans) => {
       if (plans.saving != 0 || plans.freeDays != '') {
-        card += `<div class='pricingCard'><p class='space-around'>₹${plans.amount}<span class='span'>Save ₹${plans.saving}</span></p>`
+        card += `<div class='flex-col'><p class='space-around'>₹${plans.amount}<span class='span'>Save ₹${plans.saving}</span></p><span class='freeDays'>${plans.freeDays} Days Free</span></div>`
       } else {
         card += `<p>₹${plans.amount}</p>`
       }

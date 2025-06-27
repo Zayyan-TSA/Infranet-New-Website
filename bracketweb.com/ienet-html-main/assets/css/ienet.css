@@ -18,6 +18,8 @@
 * {
   margin: 0;
   padding: 0;
+  /* box-sizing: border-box; */
+  /* word-spacing: 10px; */
 }
 
 :root {
@@ -49,28 +51,95 @@
 /*--------------------------------------------------------------
 # Utility
 --------------------------------------------------------------*/
-p .span {
-  position: relative;
-  text-align:initial !important;
+
+#infra {
+  margin: 0 -38px;
+}
+
+#Plan-Container {
+  margin: 0 -38px;
 }
 
 .span {
-  font-size: 17px;
-  background-color: #DF2339;
+  position: relative;
+  display: inline-block;
+  background: #DF2339;
   color: white;
-  border-radius: 15px;
+  font-weight: bold;
   padding: 0px 14px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 15.5px;
+  /* margin-left: auto; */
+}
+
+.span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-20deg);
+  animation: shine 1.1s infinite ease-in-out;
+}
+
+@keyframes shine {
+  0% {
+    left: -60%;
+  }
+
+  100% {
+    left: 120%;
+  }
+}
+
+#PlanPrice-Container p {
+  margin-bottom: 0 !important;
+}
+
+.freeDays {
+  color: #DF233A;
+  font-weight: bold;
+  padding-left: 17px;
+  font-size: 16.3px;
+}
+
+.flex-col {
+  background-color: white;
+  border-radius: 10px;
+  text-align: start !important;
+  padding: 8.5px 0 8.5px 2px;
+  min-width: 235px;
+  max-width: 235px;
+}
+
+.pricingCard p {
+  padding: 8.5px;
+  background-color: white;
+  color: black;
+  min-width: 235px !important;
+  max-width: 235px !important;
+  font-size: 24.5px;
+  border-radius: 10px;
+}
+
+.flex-col p {
+  padding: 0 !important;
+  background: none;
+  width: auto;
+  gap: 10px;
 }
 
 .space-around {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-}
-
-.pricingCard:nth-child(1) {
-  background: none !important;
-  color: white !important;
+  justify-content: space-evenly
 }
 
 #Plan-Container {
@@ -81,12 +150,6 @@ p .span {
   text-align: center;
 }
 
-.pricingCard p {
-  padding: 5px 0;
-  background-color: white;
-  color: black;
-}
-
 .months {
   background-color: #DF2339;
   text-align: center;
@@ -94,29 +157,25 @@ p .span {
 
 #plan-Speed-Months,
 .pricingCard {
-  gap: 29px;
+  gap: 20px;
 }
 
-#Plan-Container p {
-  width: 210px;
-  font-size: 25px;
-  border-radius: 10px;
+.mbps {
+  background: none !important;
+  color: white !important;
+  font-size: 30px !important;
 }
 
 .pricingCard {
   display: flex;
   align-items: center;
-}
-
-/* .pricingCard p:first-of-type {
   background: none !important;
   color: white;
-} */
+  margin-bottom: 35px;
+}
 
 .pricingCard p {
-  margin-top: 10px;
-  font-weight: 500;
-  /* text-align: center; */
+  font-weight: bold;
 }
 
 #plan-Speed-Months {
